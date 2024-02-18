@@ -1,0 +1,18 @@
+basics:
+  name: "Gabriel Monteiro da Silva"
+  label: "PhD Candidate in Biophysics at Brown University"
+  picture: /assets/img/gms.jpg
+  email: "gabriel.monteiro233@gmail.com"
+  phone: "+1 203 747 2506"
+  website: "todo"
+  profiles:
+    - network: "Github"
+      username: "GMDSilva"
+      url: "https://github.com/GMDSilva"
+    - network: "LinkedIn"
+      username: "Gabriel Monteiro da Silva"
+      url: "https://www.linkedin.com/in/gabriel-monteiro-da-silva-a89142106/"
+  summary: >
+    Hi, I’m Gabriel Monteiro da Silva!<br>
+    I study how changes in the dynamics of proteins affect their function.<br>
+    Click the link below to access my CV.

@@ -1,0 +1,279 @@
+#toggleButton {
+    font-size: 18px; /* Reduced font size */
+    color: white; /* Text color */
+    background-color: transparent; /* No background color */
+    cursor: pointer;
+    font-weight: bold; /* Make font bold */
+	border: none; /* No border */
+	z-index: 2;
+  }
+
+  #toggleButton.button-show {
+    background-color: transparent; /* Change to green when showing particles */
+  }
+  
+#toggleButton2 {
+    font-size: 18px; /* Reduced font size */
+    color: white; /* Text color */
+    background-color: transparent; /* No background color */
+    cursor: pointer;
+    font-weight: bold; /* Make font bold */
+	border: none; /* No border */
+	z-index: 2;
+  }
+
+  #toggleButton2.button-show {
+    background-color: transparent; /* Change to green when showing particles */
+  }
+
+.sidebar-sticky {
+    height: 100%;
+    padding-top: 5%;
+    position: fixed;
+    overflow-y: auto
+}
+  
+#toggleButton3 {
+    font-size: 18px; /* Reduced font size */
+    color: white; /* Text color */
+    background-color: transparent; /* No background color */
+    cursor: pointer;
+    font-weight: bold; /* Make font bold */
+	border: none; /* No border */
+	z-index: 2;
+  }
+
+  #toggleButton3.button-show {
+    background-color: transparent; /* Change to green when showing particles */
+  }
+
+
+#particles-js {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 96%;
+    background: linear-gradient(45deg, #0ac8f8, #081866);
+    z-index: 1;
+	content: "";
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	opacity: 1;
+	background: rgba(0,0,0,.05);
+}
+
+.avatar {
+  // <<< inline
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block;
+  img { width: 100%; }
+  // >>>
+
+  // <<< link
+  position: relative;
+  z-index: 1;
+  // >>>
+}
+
+#particles_post {
+    position: relative; /* Adjusted for positioning relative to the nearest positioned ancestor */
+    width: 50vw; /* Full viewport width */
+    height: 55vh; /* Full viewport height */
+    z-index: 1;
+    content: "";
+    opacity: 1;
+}
+
+#particles_post2 {
+    position: relative; /* Adjusted for positioning relative to the nearest positioned ancestor */
+    width: 50vw; /* Full viewport width */
+    height: 55vh; /* Full viewport height */
+    z-index: 1;
+    content: "";
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #particles_post {
+        width: 100vw;
+        height: 55vh
+    }
+}
+
+@media (max-width: 400px) {
+    #particles_post {
+        width: 100vw;
+        height: 55vh
+    }
+}
+
+#particles-js.hide {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 90%;
+    background: linear-gradient(45deg, #0ac8f8, #081866);
+    z-index: 1;
+	content: "";
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	transition: opacity 2s ease;
+	opacity: 0;
+	background: rgba(0,0,0,.05);
+}
+
+#breadcrumbs>ul {
+    height: 1.25rem;
+    margin: -1.5rem 0 .5rem;
+    padding: 0;
+    font-size: .667rem;
+    color: var(--menu-text);
+    text-transform: uppercase;
+    width: 100%;
+    list-style: none
+}
+
+// applause-button
+
+applause-button {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+
+  .count-container {
+    color: inherit;
+  }
+}
+
+.clap-count {
+  @extend h4;
+  color: var(--accent-color);
+  display: none;
+
+  svg {
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+  }
+
+  .flat {
+    fill: var(--body-bg);
+  }
+
+  .outline {
+    fill: var(--accent-color);
+  }
+}
+
+// Utterances
+
+.utterances {
+  max-width: 100%;
+}
+
+// Giscus
+
+.giscus,
+.giscus-frame {
+  width: 100%;
+}
+
+.giscus-frame {
+  border: none;
+}
+
+// Resume
+
+.project-date {
+  font-weight: var(--font-weight);
+  display: inline;
+}
+
+// Printing
+
+@media print {
+  a[href]:after {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+// Image centering
+
+.text-align-center {
+  text-align: center;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// iframe
+
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+  margin: 1rem;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+// Codeblock
+
+div.highlight {
+
+  >.pre-header {
+    overflow: hidden;
+
+    > span {
+      font-family: var(--code-font-family);
+    }
+  }
+}
+
+.highlighter-rouge {
+  border-radius: 0.7em;
+}
+
+// Fancy Codeblock Scrollbar
+
+pre {
+  border-color: transparent;
+  transition: border-color 0.5s ease;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: auto;
+  }
+
+  &:hover {
+    border-color: var(--gray);
+    transition: border-color 0.2s ease;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-color: inherit;
+    border-radius: 10px;
+    border-right-style: inset;
+    border-right-width: calc(100vw + 100vh);
+  }
+}
